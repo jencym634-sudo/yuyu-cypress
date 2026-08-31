@@ -1,0 +1,36 @@
+{
+  "positive": [
+    {
+      "org_name":"jency",
+      "url":"/jency1",
+      "des":"This is the 2st cypress testing organisation",
+      "logo_url":"https://image-processor-storage.s3.us-west-2.amazonaws.com/images/281c2d4581ed27c8a258b0e79bc504ad/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg"
+     
+    }
+  ],
+
+  "negative": [
+    {
+      "org_name":"jency",
+      "url":"/jency",
+      "des":"This is the 1st cypress testing organisation",
+      "logo_url":"/jency"
+     
+    },
+    {
+      "org_name":"1234",
+      "url":"/jency",
+      "des":"This is the 1st cypress testing organisation",
+      "logo_url":"/jency"
+    }
+  ],
+
+  "boundary": [
+    {
+      "org_name":"jencyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+      "url":"/jency",
+      "des":"This is the 1st cypress testing",
+      "logo_url":"/jency"
+    }
+  ]
+}
