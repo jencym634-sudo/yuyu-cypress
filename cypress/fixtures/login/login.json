@@ -1,0 +1,30 @@
+{
+  "positive": [
+    {
+      "email": "jency@tech4goodcommunity.com",
+      "password": "Jency@1234"
+     
+    }
+  ],
+
+  "negative": [
+    {
+      "email": "invalid@gmail",
+      "password": "Valid@123",
+      "expected": "Invalid email"
+    },
+    {
+      "email": "valid@gmail.com",
+      "password": "wrong",
+      "expected": "Invalid password"
+    }
+  ],
+
+  "boundary": [
+    {
+      "email": "a@gmail.com",
+      "password": "12345678",
+      "expected": "success"
+    }
+  ]
+}
