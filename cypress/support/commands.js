@@ -27,8 +27,8 @@
 Cypress.Commands.add("login",() => {
   cy.fixture("login").then((login) => {
      cy.visit('https://events.dev.idliapps.com/login')   
-     cy.get('#_R_2jalcqinpfivadbb_').should('be.visible').type(login.email)
-     cy.get('#_R_3jalcqinpfivadbb_').should('be.visible').type(login.password)
+     cy.get('input[type="email"]').should('be.visible').type(login.email)
+     cy.get('input[type="password"]').should('be.visible').type(login.password)
      cy.get('button[type="submit"]').click()
      cy.url().should("include","/dashboard")
     })
